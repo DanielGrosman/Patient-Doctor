@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Prescription.h"
 
 @class Patient;
 
@@ -19,7 +20,10 @@
 @property (nonatomic, assign) NSString *specialization;
 @property (nonatomic, strong) NSMutableArray *patientList;
 
+
+
 - (instancetype) initWithFirstname: (NSString *) firstname lastname:(NSString *) lastname specialization: (NSString *) specialization;
 - (void) acceptPatient:(Patient *)patient;
+- (void) returnPrescription: (Patient *)patient;
 
 @end

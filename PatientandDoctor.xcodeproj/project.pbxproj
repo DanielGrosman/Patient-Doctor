@@ -10,6 +10,7 @@
 		C07D9EB61FAB62160057075C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EB51FAB62160057075C /* main.m */; };
 		C07D9EBE1FAB623E0057075C /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EBD1FAB623E0057075C /* Patient.m */; };
 		C07D9EC11FAB624B0057075C /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EC01FAB624B0057075C /* Doctor.m */; };
+		C07D9EC41FAB794D0057075C /* Prescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C07D9EC31FAB794D0057075C /* Prescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C07D9EBD1FAB623E0057075C /* Patient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
 		C07D9EBF1FAB624B0057075C /* Doctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
 		C07D9EC01FAB624B0057075C /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		C07D9EC21FAB794D0057075C /* Prescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prescription.h; sourceTree = "<group>"; };
+		C07D9EC31FAB794D0057075C /* Prescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prescription.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				C07D9EB51FAB62160057075C /* main.m */,
+				C07D9EC21FAB794D0057075C /* Prescription.h */,
+				C07D9EC31FAB794D0057075C /* Prescription.m */,
 				C07D9EBF1FAB624B0057075C /* Doctor.h */,
 				C07D9EC01FAB624B0057075C /* Doctor.m */,
 				C07D9EBC1FAB623E0057075C /* Patient.h */,
@@ -132,6 +137,7 @@
 				C07D9EB61FAB62160057075C /* main.m in Sources */,
 				C07D9EBE1FAB623E0057075C /* Patient.m in Sources */,
 				C07D9EC11FAB624B0057075C /* Doctor.m in Sources */,
+				C07D9EC41FAB794D0057075C /* Prescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

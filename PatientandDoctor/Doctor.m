@@ -15,6 +15,14 @@
     return [NSString stringWithFormat:@"%@ %@", self.firstname, self.lastname];
               }
 
+- (NSMutableArray *) patientList {
+    if (_patientList == nil) {
+        _patientList = [[NSMutableArray alloc] init];
+    }
+    
+    return _patientList;
+}
+
 - (instancetype) initWithFirstname: (NSString *) firstname lastname:(NSString *) lastname specialization: (NSString *) specialization; {
         self = [super init];
         if (self) {
@@ -28,5 +36,14 @@
 - (void) acceptPatient:(Patient *)patient {
     [self.patientList addObject:patient];
 }
+
+-(void)returnPrescription:(Patient *)patient {
+    if ([patient.symptoms isNotEqualTo:(@"N/A")]) {
+        Prescription *prescription = [[Prescription alloc] init];
+        [patient.prescriptionList addObject:prescription];
+        NSLog(@"Your Prescription is: %@", [prescription givePrescription]);
+    }
+}
+
 
 @end

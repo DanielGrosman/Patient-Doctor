@@ -34,4 +34,15 @@
         NSLog(@"You do not have a valid health card");
 }
 
+- (void)patientSymptoms:(NSString *)symptoms {
+    _symptoms = symptoms;
+}
+
+
+- (void) requestMedication:(Doctor *)doctor {
+    if ([doctor.patientList containsObject:self]) {
+        [doctor returnPrescription:self];
+    }
+}
+
 @end
