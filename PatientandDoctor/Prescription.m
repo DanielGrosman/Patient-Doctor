@@ -14,7 +14,6 @@
     self = [super init];
     if (self) {
         _prescriptionName = @"Tylenol";
-        _prescriptionList = [[NSMutableArray alloc] init];
     }
     return self;
 }

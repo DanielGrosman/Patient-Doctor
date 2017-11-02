@@ -38,12 +38,12 @@
 }
 
 -(void)returnPrescription:(Patient *)patient {
-    if ([patient.symptoms isNotEqualTo:(@"N/A")]) {
+    //if ([patient.symptoms isNotEqualTo:(@"N/A")]) {
         Prescription *prescription = [[Prescription alloc] init];
         [patient.prescriptionList addObject:prescription];
         NSLog(@"Your Prescription is: %@", [prescription givePrescription]);
     }
-}
+
 
 
 @end

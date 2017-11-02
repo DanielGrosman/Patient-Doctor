@@ -21,6 +21,7 @@
         _lastname = lastname;
         _age = age;
         _healthCard = healthCard;
+        _prescriptionList = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -28,10 +29,10 @@
 - (void) visitDoctor:(Doctor *) doctor {
     if (self.healthCard == YES) {
         [doctor acceptPatient:self];
-        NSLog(@"You have been admitted");
+        NSLog(@"Thank you for providing your health card. You have been admitted as a patient");
     }
     else
-        NSLog(@"You do not have a valid health card");
+        NSLog(@"Sorry, you do not have a valid health card");
 }
 
 - (void)patientSymptoms:(NSString *)symptoms {
