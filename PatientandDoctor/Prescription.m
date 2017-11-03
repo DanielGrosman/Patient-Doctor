@@ -17,7 +17,7 @@
     }
     return self;
 }
-
+// creates an NSString with the prescription name
 - (NSString*) givePrescription {
     NSString *prescriptionResult = self.prescriptionName;
     return prescriptionResult;

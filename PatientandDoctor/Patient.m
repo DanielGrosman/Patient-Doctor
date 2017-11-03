@@ -26,6 +26,7 @@
     return self;
 }
 
+// if the patient has a healthCard, then the acceptPatient method is initiated, which just adds the patient to the doctors patientList. reutns a message to the patient if he has been accepted
 - (void) visitDoctor:(Doctor *) doctor {
     if (self.healthCard == YES) {
         [doctor acceptPatient:self];
@@ -35,11 +36,12 @@
         NSLog(@"Sorry, you do not have a valid health card");
 }
 
+// initiates the patient symptoms
 - (void)patientSymptoms:(NSString *)symptoms {
     _symptoms = symptoms;
 }
 
-
+//if the patient exists in the doctors patientlist (they ahve been accepted), runs the return prescription method, which prints the users prescription.
 - (void) requestMedication:(Doctor *)doctor {
     if ([doctor.patientList containsObject:self]) {
         [doctor returnPrescription:self];
